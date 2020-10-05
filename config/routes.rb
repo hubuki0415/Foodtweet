@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
-  # root  'posts#index' 
-  # resources :posts, only: [:index]
   root to: 'tweets#index'
   resources :tweets
   resources :users, only: :show
